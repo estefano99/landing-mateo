@@ -1,0 +1,15 @@
+.title-word {
+  animation: color-animation 10s linear infinite;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.title-word-1 {
+  --color-1: #FF0000;
+  --color-2: #0087E4;
+}
+
+.title-word-2 {
+  --color-1: #0087E4;
+  --color-2: #FF0000;
+
+}
