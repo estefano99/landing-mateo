@@ -14,12 +14,12 @@ function App() {
     setConfetti(true);
     setTimeout(() => {
       setConfetti(false);
-    }, 3000);
+    }, 5000);
   };
 
    const reproducirAudio = () => {
-    const audio = new Audio("./trompeta.mp3");
-    return audio.play();
+    const audio = document.getElementById('my-audio')
+    audio.play()
   };
 
   return (
@@ -50,9 +50,10 @@ function App() {
             reproducirAudio();
           }}
         >
-          Clickeá para una sorpresa
+          Clickeá acá
         </button>
       </section>
+      <audio src="./trompeta.mp3" id="my-audio"></audio>
     </div>
   );
 }
